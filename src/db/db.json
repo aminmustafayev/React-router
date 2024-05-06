@@ -1,0 +1,28 @@
+{
+  "countries": [
+    {
+      "id": "1",
+      "name": "Azerbaycan",
+      "population": "10000000",
+      "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/The_national_flag_of_Azerbaijan.jpg/2560px-The_national_flag_of_Azerbaijan.jpg",
+      "capital": "Baku",
+      "description": "Azerbaijan, officially the Republic of Azerbaijan, is a transcontinental country located at the boundary of Eastern Europe and West Asia."
+    },
+    {
+      "id": "2",
+      "name": "Russia",
+      "population": "200000000",
+      "flagImg": "https://media.istockphoto.com/id/113703276/photo/flag-from-russia.jpg?s=612x612&w=0&k=20&c=SXuLScqZr9S6vy1fqRA4K8TxsB-LEuF_eHVKRCy3quY=",
+      "capital": "Moskow",
+      "description": "Russia, or the Russian Federation, is a country spanning Eastern Europe and North Asia. It is the largest country in the world by area, extending across eleven."
+    },
+    {
+      "id": "3",
+      "name": "Turkiye",
+      "population": "80000000",
+      "flagImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlBBcNx0IHfo8Gf1TFPkwSvEOK0B7_1Q5h30o2piUXJA&s",
+      "capital": "Istanbul",
+      "description": "Turkey, officially the Republic of Türkiye, is a country mainly in Anatolia in West Asia, with a smaller part called East Thrace in Southeast Europe."
+    }
+  ]
+}
