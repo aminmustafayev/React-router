@@ -2,8 +2,8 @@
   "countries": [
     {
       "id": "1",
-      "name": "Azerbaycan",
-      "population": "10000000",
+      "name": "Azerbaijan",
+      "population": "10 million",
       "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/The_national_flag_of_Azerbaijan.jpg/2560px-The_national_flag_of_Azerbaijan.jpg",
       "capital": "Baku",
       "description": "Azerbaijan, officially the Republic of Azerbaijan, is a transcontinental country located at the boundary of Eastern Europe and West Asia."
@@ -18,11 +18,27 @@
     },
     {
       "id": "3",
-      "name": "Turkiye",
-      "population": "80000000",
-      "flagImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlBBcNx0IHfo8Gf1TFPkwSvEOK0B7_1Q5h30o2piUXJA&s",
+      "name": "Turkey",
+      "population": "84.98 million ",
+      "flagImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrWh7fxXeRT8rMOCCcBmyVTnjixxyjsxGiu4jymCEOGw&s",
       "capital": "Istanbul",
       "description": "Turkey, officially the Republic of Türkiye, is a country mainly in Anatolia in West Asia, with a smaller part called East Thrace in Southeast Europe."
+    },
+    {
+      "id": "4",
+      "name": "Norway",
+      "population": "5.457 million ",
+      "flagImg": "https://i.pinimg.com/originals/81/f0/d2/81f0d25c2578974e50bae0facd95a917.jpg",
+      "capital": "Moskow",
+      "description": "Norway is a Scandinavian country encompassing mountains, glaciers and deep coastal fjords. Oslo, the capital, is a city of green spaces and museums. Preserved 9th-century Viking ships are displayed at Oslo’s Viking Ship"
+    },
+    {
+      "id": "a7da",
+      "name": "akif",
+      "population": "1233000",
+      "capital": "salam123",
+      "description": "asd32eqdwas",
+      "flagImg": "https://t3.ftcdn.net/jpg/05/30/27/22/360_F_530272205_f8SjJriNWxuCmQh5Blu2hpTSR1VPccOB.jpg"
     }
   ]
 }

@@ -52,3 +52,10 @@ async function patch(endpoint, id, payload) {
       return error;
     }
   }
+  const controller = {
+    post: post,
+    getAll: getAll,
+    delete: deleteOne,
+    patch: patch,
+  };
+  export default controller
