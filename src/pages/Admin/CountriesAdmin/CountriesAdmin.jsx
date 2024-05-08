@@ -37,7 +37,8 @@ const CountriesAdmin = () => {
       flagImg:editCountry.flagImg,
       description:editCountry.description
     }
-    controller.patch(endpoints.countries,editCountry.id,newUpdate)
+    controller.patch(endpoints.countries,editCountry.id,newUpdate).then(()=>getData())
+    
     // setCountries((currentCountries) => {
     //   const idx = currentCountries.findIndex((x) => x.id == editCountry.id);
     //   currentCountries.splice(idx, 1, editCountry);
@@ -139,7 +140,7 @@ const CountriesAdmin = () => {
       dataIndex: '',
       key: 'description',
       render: (text, record) => (
-        <Delete text={text} id={record.id} />
+        <Delete getData={getData} text={text} id={record.id} />
       ),
     }
   ];

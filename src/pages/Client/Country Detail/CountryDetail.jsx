@@ -4,41 +4,51 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { getAll } from '../../../API'
+import { getById } from '../../../API'
 import { endpoints } from '../../../API/base';
-import { Link } from 'react-router-dom';
-import { Col, Container, Row } from 'react-bootstrap';
-import Countries from '../Countries/Countries';
+import { Link, useParams } from 'react-router-dom';
+
 
 
 const CountryDetail = () => {
+  let {id}=useParams()
+
   const [country, setCountry] = useState({}); 
+  const [data, setData] = useState([])
+  async function getCountry() {
+    await getById(endpoints.countries,id).then((res) => {
+      console.log(res.data);
+      setCountry(res.data)
+    })
+  }
   useEffect(() => {
-    setCountry(data.find((x) => x.id == id));
-  }, []) 
+    getCountry()
+  }, [])
+  console.log(country)
+
   return (
   <>
-  <Card key={e.id} style={{ margin: "20px", objectFit:"cover",  }} sx={{ maxWidth: 345 }}>
+  <Card key={country?.id} style={{ margin: "20px", objectFit:"cover",  }} sx={{ maxWidth: 345 }}>
                   <CardActionArea>
                     <CardMedia
                       component="img"
                       height="140"
-                      image={data.flagImg}
+                      image={country?.flagImg}
                       alt="green iguana"
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div">
-                        {data.name}/
-                        {data.capital}
+                        {country?.name}/
+                        {country?.capital}
                       </Typography>
                       <Typography variant="body2" color="text.secondary">
-                        {data.description}
+                        {country?.description}
                       </Typography>
                     </CardContent>
                   </CardActionArea>
                   <CardActions>
                     <Button size="small" color="primary">
-                      <Link to={`/countrydetail/${data.id}`}>Detail</Link>
+                      <Link to={"/countries"}>Go Back</Link>
                     </Button>
                   </CardActions>
                 </Card>

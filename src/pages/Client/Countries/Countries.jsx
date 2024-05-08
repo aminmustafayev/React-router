@@ -8,6 +8,7 @@ import { getAll } from '../../../API'
 import { endpoints } from '../../../API/base';
 import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Grid } from '@mui/material';
 
 const Countries = () => {
   const [data, setData] = useState([])
@@ -24,40 +25,46 @@ const Countries = () => {
 
   return (
     <>
+    <Grid container style={{width:'80%', margin:"0 auto"}}   >
       {
         data && data.map((e) => {
-          return <Container>
-            <Row>
-              <Col>
-                <Card key={e.id} style={{ margin: "20px", objectFit:"cover",  }} sx={{ maxWidth: 345 }}>
-                  <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image={e.flagImg}
-                      alt="green iguana"
-                    />
-                    <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
-                        {e.name}/
-                        {e.capital}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        {e.description}
-                      </Typography>
-                    </CardContent>
-                  </CardActionArea>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      <Link to={`/countrydetail/${e.id}`}>Detail</Link>
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
+          return (
+            <Grid item xs={12} md={6} sm={12} lg={3} >
+            <Card style={{minHeight:"450px", margin: "20px", objectFit:"cover",  }} >
+              <CardActionArea>
+                <CardMedia 
+                sx={{ }}
+                  component="img"
+                
+                  image={e.flagImg}
+                  alt="green iguana"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {e.name}/
+                    {e.capital}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {e.description}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+              <CardActions>
+                <Button size="small" color="primary">
+                  <Link to={`/countrydetail/${e.id}`}>Detail</Link>
+                </Button>
+              </CardActions>
+            </Card>
+          </Grid>
+        )
+          
+          
+          
+            
+         
         })
       }
+       </Grid>
     </>
   )
 }

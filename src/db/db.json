@@ -1,14 +1,6 @@
 {
   "countries": [
     {
-      "id": "1",
-      "name": "Azerbaijan",
-      "population": "10 million",
-      "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/The_national_flag_of_Azerbaijan.jpg/2560px-The_national_flag_of_Azerbaijan.jpg",
-      "capital": "Baku",
-      "description": "Azerbaijan, officially the Republic of Azerbaijan, is a transcontinental country located at the boundary of Eastern Europe and West Asia."
-    },
-    {
       "id": "2",
       "name": "Russia",
       "population": "200000000",
@@ -34,9 +26,9 @@
     },
     {
       "id": "a7da",
-      "name": "akif",
+      "name": "akifq234213213",
       "population": "1233000",
-      "capital": "salam123",
+      "capital": "salam123asasdasdas",
       "description": "asd32eqdwas",
       "flagImg": "https://t3.ftcdn.net/jpg/05/30/27/22/360_F_530272205_f8SjJriNWxuCmQh5Blu2hpTSR1VPccOB.jpg"
     }

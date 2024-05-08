@@ -2,7 +2,7 @@ import React from 'react'
 import { deleteOne } from '../../../API'
 import Swal from 'sweetalert2'
 
-const Delete = ({id}) => {
+const Delete = ({id,getData}) => {
   return (
     <button style={{backgroundColor:"red", border:"none",
       padding:'15px', borderRadius:'10px', color:'white'
@@ -18,6 +18,7 @@ const Delete = ({id}) => {
         }).then(async(result) => {
             if (result.isConfirmed) {
                 await deleteOne("countries",id)
+                getData()
               Swal.fire({
                 title: "Deleted!",
                 text: "Your file has been deleted.",
